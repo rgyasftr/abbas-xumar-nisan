@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Abbas &amp; Xumar — Nişan</title>
+    <meta name="description" content="Abbas və Xumarın nişan mərasiminə dəvətnamə" />
+    <meta property="og:title" content="Abbas &amp; Xumar — Nişan" />
+    <meta property="og:description" content="Hörmətli qonağımız, böyük məmnuniyyət hissi ilə sizi nişan günümüzə dəvət edirik." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;1,400;1,500&family=Jost:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Floating Audio Toggle -->
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle background music" title="Musiqini idarə et">
+      <svg class="playing-icon" viewBox="0 0 24 24">
+        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+      </svg>
+      <svg class="muted-icon" viewBox="0 0 24 24">
+        <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27l4.73 4.73H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+      </svg>
+    </button>
+
+    <!-- Background Audio -->
+    <audio id="bgMusic" loop preload="auto">
+      <source src="./assets/christina_perri_-_thousand_years_(mp3.pm).mp3" type="audio/mpeg" />
+      <source src="https://umud-laman-engagement.vercel.app/christina_perri_-_thousand_years_(mp3.pm).mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="wrap">
+      <!-- Section 1: Envelope Cover -->
+      <section class="sec-full s1" id="s1" onclick="startEnv()">
+        <img
+          class="s1-poster"
+          id="poster"
+          src="./assets/poster.webp"
+          onerror="this.src='https://pressedlove.com/_next/image?url=%2Fdemo-media%2Fshared%2Fpressed-love-envelope-poster-ec17521e.webp&w=1080&q=75&dpl=dpl_Gh5mcjkTxMStiYBnuEdHYrqgV1pf'"
+          alt="Zərf qapağı"
+        />
+        <div class="s1-tap" id="tap">
+          <div class="tap-txt">Açmaq üçün toxunun</div>
+        </div>
+        <video
+          class="s1-envvid"
+          id="envVid"
+          playsinline
+          preload="auto"
+        >
+          <source src="./assets/pressed-love-envelope-52d49bf5.mp4" type="video/mp4" />
+          <source src="https://umud-laman-engagement.vercel.app/pressed-love-envelope-52d49bf5.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <!-- Section 2: Hero Intro -->
+      <section class="sec-full s2" id="s2">
+        <video
+          class="hero-vid"
+          id="heroVid"
+          playsinline
+          preload="auto"
+          loop
+          muted
+        >
+          <source src="./assets/hero-video-1230-C27srnl9.mp4" type="video/mp4" />
+          <source src="https://umud-laman-engagement.vercel.app/hero-video-1230-C27srnl9.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-ov"></div>
+        <div class="hero-content">
+          <div class="eng-top">
+            <div class="eng-line"></div>
+            <div class="eng-lbl">Engagement Day</div>
+            <div class="eng-line"></div>
+          </div>
+          <div class="names-blk">
+            <h1 class="hero-names">
+              Abbas<span class="hero-amp">&amp;</span>Xumar
+            </h1>
+            <div class="hero-div"></div>
+            <div class="hero-date">22 · 11 · 2026</div>
+          </div>
+          <div class="scroll-blk">
+            <div class="scroll-txt">Aşağı sürüşdürün</div>
+            <span class="scroll-arr">↓</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Invitation Letter -->
+      <section class="sec-auto" id="s3">
+        <!-- Floral corners -->
+        <svg class="corner tl" width="130" height="130" viewBox="0 0 130 130" fill="none">
+          <ellipse cx="22" cy="80" rx="20" ry="8" fill="#c4856a" transform="rotate(-50 22 80)" />
+          <ellipse cx="38" cy="62" rx="17" ry="7" fill="#e8b4a0" transform="rotate(-70 38 62)" />
+          <circle cx="35" cy="52" r="15" fill="#e8a888" />
+          <circle cx="35" cy="52" r="10" fill="#de9070" />
+          <circle cx="35" cy="52" r="6" fill="#d07860" />
+          <ellipse cx="14" cy="38" rx="14" ry="5" fill="#8aa870" transform="rotate(-38 14 38)" />
+          <path d="M20 70 Q32 45 55 28" stroke="#8a9860" stroke-width="1" fill="none" />
+        </svg>
+        <svg class="corner tr" width="130" height="130" viewBox="0 0 130 130" fill="none">
+          <ellipse cx="22" cy="80" rx="20" ry="8" fill="#c4856a" transform="rotate(-50 22 80)" />
+          <ellipse cx="38" cy="62" rx="17" ry="7" fill="#e8b4a0" transform="rotate(-70 38 62)" />
+          <circle cx="35" cy="52" r="15" fill="#e8a888" />
+          <circle cx="35" cy="52" r="10" fill="#de9070" />
+          <ellipse cx="14" cy="38" rx="14" ry="5" fill="#8aa870" transform="rotate(-38 14 38)" />
+        </svg>
+        <svg class="corner bl" width="130" height="130" viewBox="0 0 130 130" fill="none">
+          <ellipse cx="22" cy="80" rx="20" ry="8" fill="#c4856a" transform="rotate(-50 22 80)" />
+          <circle cx="35" cy="52" r="15" fill="#e8a888" />
+          <circle cx="35" cy="52" r="10" fill="#de9070" />
+          <ellipse cx="14" cy="38" rx="14" ry="5" fill="#8aa870" transform="rotate(-38 14 38)" />
+        </svg>
+        <svg class="corner br" width="130" height="130" viewBox="0 0 130 130" fill="none">
+          <ellipse cx="22" cy="80" rx="20" ry="8" fill="#c4856a" transform="rotate(-50 22 80)" />
+          <circle cx="35" cy="52" r="15" fill="#e8a888" />
+          <circle cx="35" cy="52" r="10" fill="#de9070" />
+          <ellipse cx="14" cy="38" rx="14" ry="5" fill="#8aa870" transform="rotate(-38 14 38)" />
+        </svg>
+
+        <div class="invite-wrap reveal">
+          <div class="rule-row">
+            <div class="rl"></div>
+            <div class="rd"></div>
+            <div class="rl"></div>
+          </div>
+          <p class="inv-txt">
+            Hörmətli qonağımız,<br />böyük məmnuniyyət hissi ilə sizi nişan
+            günümüzə<br />sevincimizi bizimlə bölüşməyə dəvət edirik.
+          </p>
+          <div class="rule-row">
+            <div class="rl"></div>
+            <div class="rd"></div>
+            <div class="rl"></div>
+          </div>
+        </div>
+
+        <div class="s3-spacer"></div>
+
+        <div class="ctr-blk reveal-scale">
+          <span class="name-txt">Abbas</span>
+          <div class="amp-wrap">
+            <div class="amp-line"></div>
+            <span class="amp-char">&amp;</span>
+            <div class="amp-line"></div>
+          </div>
+          <span class="name-txt">Xumar</span>
+          <div class="orn-div">
+            <div class="dl"></div>
+            <div class="dm">
+              <div class="dd"></div>
+              <div class="dd big"></div>
+              <div class="dd"></div>
+            </div>
+            <div class="dl"></div>
+          </div>
+          <div class="date-txt">22 Noyabr 2026</div>
+          <div class="time-txt">Saat 18:00</div>
+        </div>
+
+        <div class="bot-blk reveal">
+          <div class="rule-row">
+            <div class="rl"></div>
+            <div class="rd"></div>
+            <div class="rl"></div>
+          </div>
+          <div class="venue-lbl">Məkan</div>
+          <div class="venue-name">Baharlı</div>
+          <div class="rule-row">
+            <div class="rl"></div>
+            <div class="rd"></div>
+            <div class="rl"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Countdown -->
+      <section class="s4" id="s4">
+        <div class="s4-rule reveal">
+          <div class="s4-rl"></div>
+          <div class="s4-rd"></div>
+          <div class="s4-rl"></div>
+        </div>
+        <div class="s4-title reveal">Nişan gününə qədər</div>
+        <div class="cd-names reveal">Abbas &amp; Xumar</div>
+        <div class="cd-row reveal-scale">
+          <div class="cd-unit">
+            <div class="cd-num" id="cd-d">00</div>
+            <div class="cd-lbl">Gün</div>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit">
+            <div class="cd-num" id="cd-h">00</div>
+            <div class="cd-lbl">Saat</div>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit">
+            <div class="cd-num" id="cd-m">00</div>
+            <div class="cd-lbl">Dəqiqə</div>
+          </div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit">
+            <div class="cd-num" id="cd-s">00</div>
+            <div class="cd-lbl">Saniyə</div>
+          </div>
+        </div>
+        <div class="cd-date-line reveal">22 Noyabr 2026 · Saat 18:00</div>
+        <div class="s4-rule reveal">
+          <div class="s4-rl"></div>
+          <div class="s4-rd"></div>
+          <div class="s4-rl"></div>
+        </div>
+      </section>
+
+
+      <!-- Section 6: Venue Location & Map -->
+      <section class="s6" id="s6">
+        <div class="s6-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.97!2d49.70267!3d40.56423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403091c08b0d006f%3A0x5b81a4be26077ca6!2sBaharl%C4%B1+ail%C9%99vi+istirah%C9%99t+kompleksi!5e0!3m2!1sen!2saz!4v1716000000000!5m2!1sen!2saz"
+            allowfullscreen
+            loading="lazy"
+            title="Baharlı Xəritə"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="s6-info">
+          <div class="s6-rule reveal">
+            <div class="s6-rl"></div>
+            <div class="s6-rd"></div>
+            <div class="s6-rl"></div>
+          </div>
+          <div class="s6-lbl reveal">Məkan</div>
+          <div class="s6-name reveal">Baharlı</div>
+          <div class="s6-addr reveal">Baharlı ailəvi istirahət kompleksi, Azərbaycan</div>
+          <div class="s6-rule reveal">
+            <div class="s6-rl"></div>
+            <div class="s6-rd"></div>
+            <div class="s6-rl"></div>
+          </div>
+          <a
+            class="s6-btn reveal"
+            href="https://maps.app.goo.gl/W1vv5tdPuwHFhPU26"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+            Yol xəritəsini aç
+          </a>
+        </div>
+      </section>
+
+      <!-- Section 7: Wishes / Guestbook -->
+      <section class="s7" id="s7">
+        <svg class="s7-corner tl" width="110" height="110" viewBox="0 0 130 130" fill="none">
+          <ellipse cx="22" cy="80" rx="20" ry="8" fill="#c4856a" transform="rotate(-50 22 80)" />
+          <ellipse cx="38" cy="62" rx="17" ry="7" fill="#e8b4a0" transform="rotate(-70 38 62)" />
+          <circle cx="35" cy="52" r="14" fill="#e8a888" />
+          <circle cx="35" cy="52" r="9" fill="#de9070" />
+          <ellipse cx="14" cy="38" rx="13" ry="4.5" fill="#8aa870" transform="rotate(-38 14 38)" />
+        </svg>
+        <svg class="s7-corner tr" width="110" height="110" viewBox="0 0 130 130" fill="none">
+          <ellipse cx="22" cy="80" rx="20" ry="8" fill="#c4856a" transform="rotate(-50 22 80)" />
+          <ellipse cx="38" cy="62" rx="17" ry="7" fill="#e8b4a0" transform="rotate(-70 38 62)" />
+          <circle cx="35" cy="52" r="14" fill="#e8a888" />
+          <circle cx="35" cy="52" r="9" fill="#de9070" />
+          <ellipse cx="14" cy="38" rx="13" ry="4.5" fill="#8aa870" transform="rotate(-38 14 38)" />
+        </svg>
+        <svg class="s7-corner bl" width="110" height="110" viewBox="0 0 130 130" fill="none">
+          <ellipse cx="22" cy="80" rx="20" ry="8" fill="#c4856a" transform="rotate(-50 22 80)" />
+          <circle cx="35" cy="52" r="14" fill="#e8a888" />
+          <circle cx="35" cy="52" r="9" fill="#de9070" />
+          <ellipse cx="14" cy="38" rx="13" ry="4.5" fill="#8aa870" transform="rotate(-38 14 38)" />
+        </svg>
+        <svg class="s7-corner br" width="110" height="110" viewBox="0 0 130 130" fill="none">
+          <ellipse cx="22" cy="80" rx="20" ry="8" fill="#c4856a" transform="rotate(-50 22 80)" />
+          <circle cx="35" cy="52" r="14" fill="#e8a888" />
+          <circle cx="35" cy="52" r="9" fill="#de9070" />
+          <ellipse cx="14" cy="38" rx="13" ry="4.5" fill="#8aa870" transform="rotate(-38 14 38)" />
+        </svg>
+
+        <div class="s7-header reveal">
+          <div class="s7-rule">
+            <div class="s7-rl"></div>
+            <div class="s7-rd"></div>
+            <div class="s7-rl"></div>
+          </div>
+          <h2 class="s7-title">Ürək Sözləri</h2>
+          <div class="s7-sub">Bizə xoş sözlərinizi yazın</div>
+          <div class="s7-rule">
+            <div class="s7-rl"></div>
+            <div class="s7-rd"></div>
+            <div class="s7-rl"></div>
+          </div>
+        </div>
+
+        <form class="msg-form reveal" id="msgForm" onsubmit="event.preventDefault(); submitMsg();">
+          <input
+            class="msg-input"
+            id="msgName"
+            type="text"
+            placeholder="Adınız"
+            maxlength="60"
+            required
+            autocomplete="name"
+          />
+          <textarea
+            class="msg-textarea"
+            id="msgText"
+            placeholder="Təbrik mesajınız"
+            maxlength="400"
+            rows="3"
+            required
+          ></textarea>
+          <button class="msg-btn" id="msgBtn" type="submit">
+            Göndər
+          </button>
+          <div class="msg-success" id="msgSuccess">
+            Təşəkkür edirik! Mesajınız qeydə alındı 🌸
+          </div>
+        </form>
+
+        <div class="msgs-divider reveal">
+          <div class="msgs-divider-line"></div>
+          <div class="msgs-divider-txt">Gəlmiş mesajlar</div>
+          <div class="msgs-divider-line"></div>
+        </div>
+
+        <div class="msgs-list" id="msgsList">
+          <div class="msgs-loading">Yüklənir...</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>

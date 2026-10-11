@@ -1,0 +1,13 @@
+{
+  "name": "abbas-xumar-engagement",
+  "version": "1.0.0",
+  "description": "Abbas & Xumar Nişan Dəvətnaməsi",
+  "scripts": {
+    "start": "npx serve -l 3000",
+    "dev": "npx serve -l 3000",
+    "serve:py": "python -m http.server 3000"
+  },
+  "keywords": ["wedding", "engagement", "invitation", "rsvp", "baharli"],
+  "author": "",
+  "license": "ISC"
+}
