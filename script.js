@@ -112,9 +112,9 @@ function showHero() {
   }, 1400);
 }
 
-// ── Countdown Timer (Target: 2026-11-22 18:00:00 AZT) ──
+// ── Countdown Timer (Target: 2026-11-29 17:00:00 AZT) ──
 function updateCD() {
-  const targetDate = new Date("2026-11-22T18:00:00+04:00").getTime();
+  const targetDate = new Date("2026-11-29T17:00:00+04:00").getTime();
   const diff = targetDate - Date.now();
 
   if (diff <= 0) {
